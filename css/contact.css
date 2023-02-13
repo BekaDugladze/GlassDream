@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+
+a{
+    text-decoration: none;
+}
+header{
+    display:flex;
+    background-color:rgb(66, 84, 182);
+    height: 120px;
+    justify-content: space-between;
+}
+main{
+    background-color: hsla(235, 30%, 90%, 0.80);
+}
+header nav{
+    display: flex;
+    margin-right: 60px;
+    align-items: center;
+}
+header nav ul{
+    display:flex;
+}
+header nav ul li{
+    padding: 5px 20px;
+    display: inline-block;
+    position: relative;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+header nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fcfafa;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+header nav ul li:hover::after{
+    width:100%;
+}
+header img{
+    background-color:rgb(66, 84, 182);
+    height: 85px;
+    width: 85px;
+    padding: 15px;
+    border-radius: 75px;
+    position:fixed;
+    margin-left: 45px;
+}  
+
+/*2-nav*/
+
+.nav{
+    position: fixed;
+    margin: 0px 0px 200px 0;
+    font-size: 18px;
+    z-index: 1;
+}
+.nav li{
+    border: 1px solid rgb(66, 84, 182);
+    padding: 15px;
+    display: block;
+    background-color:rgb(66, 84, 182);
+}
+.nav li:hover{
+    background: white;
+    border: 1px solid rgb(66, 84, 182);
+    transition:  0.7s;
+    font-weight:bold;
+    display: block;
+    color: rgb(66, 84, 182);
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+}
+.nav iframe{
+    height: 150px;
+    width: 150px;
+    display: block;
+    border-radius: 75%;
+    margin-left: 38px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.nav{
+    background-color: rgb(66, 84, 182);
+}
+.nav article{
+    font-size: 12px;
+    color:white;
+    font-weight: bold;
+} 
+
+/*second*/
+
+.second h1{
+    color: rgb(66, 84, 182);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    
+    display: flex;
+    margin-left: 240px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-right: 90px;
+    text-align: center;
+    justify-content: space-around;
+    height: 100px;
+}
+.partnor {
+    display: flex;
+    margin-left: 240px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-right: 90px;
+    text-align: center;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.partnor a{
+    border-radius: 73%;
+    color: rgb(66, 84, 182);
+    font-weight: bold;
+}
+.partnor figure{
+    border: 1px solid rgb(66, 84, 182);
+    border-radius: 75%;
+    padding: 40px ;
+    width: 100px;
+    height: 90px;
+    margin: 5px 10px;
+    text-align: center;
+}
+.partnor figure:hover{
+    background-color: rgb(66, 84, 182);
+    transition: 0.5s;
+}
+.partnor a:hover{
+    color: white;
+}
+.partnor figure img{
+    width: 90px;
+    height: 85px;
+}
+
+
+
+
+
+
