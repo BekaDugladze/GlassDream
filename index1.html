@@ -2,7 +2,11 @@
 <html lang="ka">  
      <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.7 minimum-scale=0.6 maximum-scale=1">    <title>GLASS DREAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7 minimum-scale=0.6 maximum-scale=1">   
+    <title>GLASS DREAM</title>
     <meta name="google-site-verification">
     <meta name="description" content="შპს ,,GLASS DREAM არის სამშენებლო მინების მსხვილი იმპორტიორი საქართველოში, რომლის მიზანია ქართულ ბაზარზე აამაღლოს სამშენებლო მინის ხარისხი და შექმნას კონკურენტული გარემო პროდუქციის პლურალიზმით.
     შპს ,,GLASS DREAM მიზნად ისახავს საბაზრო დონის ამაღლებასა და ხარისხიანი პროდუქციის დისტრიბუციას.
@@ -29,12 +33,9 @@
 
         <!--2-Nav-->
 
+        
+
         <nav class="nav">
-            <ul>
-                <a href="#partnor"><li>პარტნიორი კომპანიები</li></a>
-                <a href=""><li>ჩვენი დამკვეთები</li></a>
-                <a href=""><li>სიახლეები</li></a>
-            </ul>
         <div class="fasi">
             <label for="glassSelect">გამოთვალე ფასი</label>
             <select name="glass" id="glassSelect">
@@ -43,19 +44,13 @@
                 <option value="guardian6">6მმ Guardian Glass</option>
                 <option value="guardian8">8მმ Guardian Glass</option>
             </select>
-            <input id="simagle" type="text" placeholder="სიმაღლე">
-            <input id="sigane" type="text" placeholder="სიგანე">
-            <input id="raodenoba" type="text" placeholder="რაოდენობა">
-            <button onclick="gamotvale()">გამოთვალე</button>
-            <div id="sruliFasi"><p> <script type="module" src="./resources/js/javascript.js"></script>
-            </p>
+            <input id="simagle" type="number" placeholder="სიმაღლე" required min="1">
+            <input id="sigane" type="number" placeholder="სიგანე" required min="1">
+            <input id="raodenoba" type="number" placeholder="რაოდენობა" required min="1">
+            <button id="gamotvla">გამოთვალე</button>
             </div>
         </div>
-        <script src="./resources/js/javascript.js">
-        </script>
-            <article>
-                <p>მის: პეტრე სარაჯიშვილის 1</p>
-            </article>
+        <script src="./resources/js/javascript.js" async></script> 
         </nav>
 
         <!--Main-->
@@ -72,54 +67,83 @@
             <!--Partnor-->
 
             <section class="second">
-                <h1>პარტნიორი კომპანიები</h1>
+                <h2>პარტნიორი კომპანიები</h2>
                 <div id="partnor" class="partnor">
                     <a href="https://ardakanglass.com/SC.php" target="_blank">
-                        <figure> 
+                        <p>Ardakan glass is an iranian factory. bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                             nabdkbsdk hbdkhbdkdsakj hdbhdsabkhdsab hjsdbhsabdkhsabkd hsbdsabdksabdksabdkds <br>
+                             sdbhdhdbhd ddffhdhfhf hdfffg beka bekuna bekkk</p>
+                        <figure class="left">
                         <img src="ff/logo ardakan.png">
-                        <figcaption><em>ardakan Glass</em></figcaption>
-                    </figure></a>
+                        <figcaption><em>Ardakan Glass</em></figcaption>
+                    </figure ></a>
                     <a href="https://www.agc-yourglass.com/en-UK/profiler" target="_blank">
-                        <figure>    
+                        <figure class="right">    
                         <img class="agc" src="ff/header_logo.png">
                         <figcaption><em>AGC</em></figcaption>
-                    </figure></a>
+                    </figure ></a>
                     <a href="https://www.facebook.com/azerfloatofficial/" target="_blank">
-                        <figure>
+                        <figure class="left">
                         <img src="ff/logoSecond.svg">
                         <figcaption><em>AzerFloat</em></figcaption>
                     </figure></a>
                     <a href="https://www.saint-gobain-glass.com/" target="_blank">
-                        <figure>
+                    <figure class="right">
                         <img src="ff/sgg.png">
                         <figcaption><em>Saint-Gobain Glass</em></figcaption>
-                    </figure></a>
+                    </figure class="left"></a>
                     <a href="https://www.guardianglass.com/tr/en" target="_blank">
-                        <figure>
+                    <figure class="left">
                         <img src="ff/av_imagen.png">
                         <figcaption><em>Guardian Glass</em></figcaption>
                     </figure></a>
-                    <a href="http://www.salstek.ru/?locale=en" target="_blank"><figure>
+                    <a href="http://www.salstek.ru/?locale=en" target="_blank">
+                    <figure class="right">
                         <img src="ff/logo salavat (1).png">
                         <figcaption><em>SalavatSteklo</em></figcaption>
                     </figure></a>
-                    <a href="https://kavehglass.com/?lang=en" target="_blank"><figure>
+                    <a href="https://kavehglass.com/?lang=en" target="_blank">
+                    <figure class="left">
                         <img src="ff/kaveh.png">
                         <figcaption><em>KavehGlass</em></figcaption>
                     </figure></a>
-                    <a href="https://www.sisecam.com.tr/en" target="_blank"><figure>
+                    <a href="https://www.sisecam.com.tr/en" target="_blank">
+                    <figure class="right">
                         <img src="ff/Sisecam_yatay_logo.png">
                         <figcaption><em>SiseCam</em></figcaption>
                     </figure></a>
-                    <a href="https://www.rexiglass.com/" target="_blank"><figure>
+                    <a href="https://www.rexiglass.com/" target="_blank">
+                    <figure class="left">
                         <img src="ff/logo320659.webp">
                         <figcaption><em>Rexi Glass</em></figcaption>
                     </figure></a>
-                    <a href="https://www.incicam.com.tr/" target="_blank"><figure>
+                    <a href="https://www.incicam.com.tr/" target="_blank">
+                    <figure class="right">
                         <img src="ff/inci cam.webp">
                         <figcaption><em>Incicam</em></figcaption>
                     </figure></a>
                     </div>
+            </section>
+
+            <h2>შესრულებული პროექტები</h2>
+
+            <section class="third">
+                <figure id="a">
+                    <figcaption>M2 ნუცუბიძე</figcaption>
+                    <img src="./tt/glassbuilding.jpg" alt="M2 Nutsubidze, მ2 ნუცუბიძე, ემ კვადრატი ნუცუბიძე">
+                </figure>
+                <figure id="a">
+                    <figcaption>M2 ნუცუბიძე</figcaption>
+                    <img src="./tt/glassbuilding.jpg" alt="M2 Nutsubidze, მ2 ნუცუბიძე, ემ კვადრატი ნუცუბიძე">
+                </figure>
+                <figure id="a">
+                    <figcaption>M2 ნუცუბიძე</figcaption>
+                    <img src="./tt/glassbuilding.jpg" alt="M2 Nutsubidze, მ2 ნუცუბიძე, ემ კვადრატი ნუცუბიძე">
+                </figure>
+                <figure id="a">
+                    <figcaption>M2 ნუცუბიძე</figcaption>
+                    <img src="./tt/glassbuilding.jpg" alt="M2 Nutsubidze, მ2 ნუცუბიძე, ემ კვადრატი ნუცუბიძე">
+                </figure>
             </section>
         </main>
 
@@ -127,10 +151,10 @@
         <!--footer-->
 
         <footer>
-            <div class="h4">
-                <h4>მისამართი</h4>
-                <h4>მისამართი</h4>
-                <h4>მისამართი</h4>
+            <div>
+                <p><span>Developed by <a href="#first">Beka Dugladze</a></span></p>
+                <br>
+                <p>2023</p>
             </div>
             <div>
                 <img src="ff/Black and White Circle Elegant Photographer Initials Logo (2).png">
