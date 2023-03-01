@@ -1,0 +1,307 @@
+*{
+margin:0;
+padding:0;
+}
+
+
+
+
+a{
+    text-decoration: none;
+}
+header{
+    display:flex;
+    background-color:rgb(66, 84, 182);
+    height: 120px;
+    justify-content: space-between;
+}
+main{
+    background-color: hsla(235, 30%, 90%, 0.80);
+}
+header nav{
+    display: flex;
+    margin-right: 10%;
+    align-items: center;
+}
+header nav ul{
+    display:flex;
+}
+header nav ul li{
+    padding: 5px 20px;
+    display: inline-block;
+    position: relative;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+header nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fcfafa;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+header nav ul li:hover::after{
+    width:100%;
+}
+header img{
+    background-color:rgb(66, 84, 182);
+    height: 85px;
+    width: 85px;
+    padding: 15px;
+    border-radius: 75px;
+    position:fixed;
+    margin-left: 45px;
+} 
+/*2-nav*/
+.nav{
+    position: fixed;
+    margin: 0px 0px 200px 0;
+    font-size: 18px;
+    z-index: 1;
+    height: 800px;
+    display: inherit;
+}
+.nav li{
+    border: 1px solid rgb(66, 84, 182);
+    padding: 15px;
+    display: block;
+    background-color:rgb(66, 84, 182);
+}
+.nav li:hover{
+    background: white;
+    border: 1px solid rgb(66, 84, 182);
+    transition:  0.7s;
+    font-weight:bold;
+    display: block;
+    color: rgb(66, 84, 182);
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+}
+
+/*gamotvale*/
+
+.nav .fasi{
+    display: flex;
+    flex-direction: column;
+    padding: 1,2rem;
+}
+.fasi label{
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 5%;
+}
+.fasi select{
+    width: 70%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+    margin: 3%;
+    padding: 2%;
+}
+.fasi input{
+    width: 60%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+    margin: 3%;
+    padding: 2%;
+}
+#gamotvale{
+    border: 1px solid rgb(66, 84, 182);
+    cursor: pointer;
+}
+#gamotvale:hover{
+    color: white;
+    background-color: rgb(66, 84, 182);
+    transition: 0.5s;
+    border: 1px solid white;
+}
+.nav{
+    background-color: rgb(66, 84, 182);
+}
+.nav article{
+    font-size: 12px;
+    color:white;
+    font-weight: bold;
+}
+/*index*/
+.first{
+    margin: 0 auto;
+    padding: 50px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.first div{
+    margin-left: 100px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.first h1{
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(66, 84, 182);
+}
+.first h5{
+    color: rgb(66, 84, 182);
+}
+.first a{
+    margin-top: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background-color:rgb(66, 84, 182);
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.first a:hover{
+    border: 1px solid rgb(66, 84, 182);
+    color: rgb(66, 84, 182);
+    transition: 0.64s;
+    background-color: white;
+}
+
+/*პარტნიორი ორგანიზაციები*/
+
+.second h1{
+    color: rgb(66, 84, 182);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    
+    display: flex;
+    margin-left: 240px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-right: 90px;
+    text-align: center;
+    justify-content: space-around;
+    height: 100px;
+}
+.partnor {
+    display: flex;
+    margin-left: 240px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-right: 90px;
+    text-align: center;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.partnor a{
+    border-radius: 73%;
+    color: rgb(66, 84, 182);
+    font-weight: bold;
+}
+.partnor figure{
+    border: 1px solid rgb(66, 84, 182);
+    border-radius: 75%;
+    padding: 40px ;
+    width: 100px;
+    height: 90px;
+    margin: 5px 10px;
+    text-align: center;
+}
+.partnor figure:hover{
+    background-color: rgb(66, 84, 182);
+    transition: 0.5s;
+}
+.partnor a:hover{
+    color: white;
+}
+.partnor figure img{
+    width: 90px;
+    height: 85px;
+}
+/*video*/
+.video video{
+    width: 950px;
+    height: 475px;
+    margin: 50px auto;
+}
+.video{
+    opacity: 0.65;
+    text-align: center;
+    position: static;
+}
+/*footer*/
+footer img{
+    border-radius: 75%;
+    height: 125px;
+    width: 125px;
+    float: right;
+    margin-right: 75px;
+}
+footer{
+    background-color: hsla(235, 50%, 73%, 0.5);
+    height: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+footer .h4{
+    display: flex;
+    flex-direction: column;
+    line-height: 32px;
+    margin-left: 250px;
+}
+
+/*--media--*/
+@media screen and (min-width: 300px) and (max-width: 700px)  {
+    .nav{
+        display: none;
+    }
+    header nav{
+        display: none;
+    }
+    /*header a, header img{
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        margin-left: 0px;
+        position: fixed;
+    }*/
+    header a {
+        width: 85%;
+    }
+    .first{
+        width:100%;
+        margin: 0px;
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        margin-left: 0%;
+    }
+    .first div{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        margin-left: 0%;
+    }
+    .second h1{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .partnor{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+}
