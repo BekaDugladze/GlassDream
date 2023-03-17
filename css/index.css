@@ -229,6 +229,9 @@ header img{
     width: 90px;
     height: 85px;
 }
+#ardakan p{
+    visibility: hidden;
+}
 /*video*/
 .video video{
     width: 950px;

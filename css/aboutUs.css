@@ -1,0 +1,40 @@
+.AboutUs{
+    margin: 0 auto;
+    padding: 50px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.AboutUs video{
+    height:400px;
+    width: 100%;
+}
+
+.Us{
+    height: 500px;
+}
+
+.Us h1{
+    text-align: center;
+    font-size: 2em;
+    color: rgb(66, 84, 182);
+    margin: 5% auto;
+}
+
+.Us p{
+    align-items: center;
+    text-align: center;
+    margin-left: 17.5%;
+    align-content: center;
+    margin-right: 17.5%;
+    font-size: 15px;
+    font-family: 'Noto Serif Georgian', serif;;
+}
+.link{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(66, 84, 182);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

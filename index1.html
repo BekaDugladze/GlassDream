@@ -18,7 +18,7 @@
     <meta name="keywords" content="სამშენებლო, მინები, მინა–პაკეტი, მინაპაკეტი, მეტალო, მეტალო–პლასტმასი, მეტალოპლასტმასი, მშენებლობა, აშენება, შემინვა,შუშა, მინა, შუშები, სამშენებლო შუშა, სამშენებლო შუშები, საქართველო, saqartvelo, sakartvelo, shusha, shushebi, mina, minebi, samsheneblo minebi, samsheneblo mina, samsheneblo shusha, metalo, metaloplastmasi, kar-fanjara, ">
     
     
-    <link rel="icon" href="ff/Black and White Circle Elegant Photographer Initials Logo (2).png">
+    <link rel="icon" href="ff/Black and White Circle Elegant Photographer Initials Logo (7).png">
 </head>
     <body>
         <header>
@@ -46,10 +46,11 @@
                 <option value="guardian6">6მმ Guardian Glass</option>
                 <option value="guardian8">8მმ Guardian Glass</option>
             </select>
-            <input id="simagle" type="number" placeholder="სიმაღლე(მეტრი)" required min="1">
-            <input id="sigane" type="number" placeholder="სიგანე(მეტრი)" required min="1">
-            <input id="raodenoba" type="number" placeholder="რაოდენობა(ცალი)" required min="1">
+            <input id="simagle" type="number" placeholder="სიმაღლე(მეტრი)" min="1" required />
+            <input id="sigane" type="number" placeholder="სიგანე(მეტრი)" min="1" required/>
+            <input id="raodenoba" type="number" placeholder="რაოდენობა(ცალი)" min="1" required/>
             <button id="gamotvla">გამოთვალე</button>
+            <p id="pasuxi"></p>
             </div>
         </div>
         </nav>
@@ -57,7 +58,10 @@
         <!--Main-->
 
         <main>
+            
             <section  class="first">
+                <figure>
+                </figure>
                 <div>
                 <h1 id="iH">Glass Dream</h1>
                 <h5>სამშენებლო მინების მსხვილი დისტრიბუტორი საქართველოში</h5>
@@ -66,67 +70,144 @@
             </section>
 
             <!--Partnor-->
-
             <section class="second">
+                <script type.module src="./Figure.js" async></script> 
                 <h2>პარტნიორი კომპანიები</h2>
-                <div id="partnor" class="partnor">
-                    <a href="https://ardakanglass.com/SC.php" target="_blank">
-                        <p>Ardakan glass is an iranian factory. bla bla bla bla bla bla bla bla bla bla bla bla <br>
-                             nabdkbsdk hbdkhbdkdsakj hdbhdsabkhdsab hjsdbhsabdkhsabkd hsbdsabdksabdksabdkds <br>
-                             sdbhdhdbhd ddffhdhfhf hdfffg beka bekuna bekkk</p>
-                        <figure class="left">
-                        <img src="ff/logo ardakan.png">
-                        <figcaption><em>Ardakan Glass</em></figcaption>
-                    </figure ></a>
-                    <a href="https://www.agc-yourglass.com/en-UK/profiler" target="_blank">
-                        <figure class="right">    
-                        <img class="agc" src="ff/header_logo.png">
-                        <figcaption><em>AGC</em></figcaption>
-                    </figure ></a>
-                    <a href="https://www.facebook.com/azerfloatofficial/" target="_blank">
-                        <figure class="left">
-                        <img src="ff/logoSecond.svg">
-                        <figcaption><em>AzerFloat</em></figcaption>
-                    </figure></a>
-                    <a href="https://www.saint-gobain-glass.com/" target="_blank">
-                    <figure class="right">
-                        <img src="ff/sgg.png">
-                        <figcaption><em>Saint-Gobain Glass</em></figcaption>
-                    </figure class="left"></a>
-                    <a href="https://www.guardianglass.com/tr/en" target="_blank">
-                    <figure class="left">
-                        <img src="ff/av_imagen.png">
-                        <figcaption><em>Guardian Glass</em></figcaption>
-                    </figure></a>
-                    <a href="http://www.salstek.ru/?locale=en" target="_blank">
-                    <figure class="right">
-                        <img src="ff/logo salavat (1).png">
-                        <figcaption><em>SalavatSteklo</em></figcaption>
-                    </figure></a>
-                    <a href="https://kavehglass.com/?lang=en" target="_blank">
-                    <figure class="left">
-                        <img src="ff/kaveh.png">
-                        <figcaption><em>KavehGlass</em></figcaption>
-                    </figure></a>
-                    <a href="https://www.sisecam.com.tr/en" target="_blank">
-                    <figure class="right">
-                        <img src="ff/Sisecam_yatay_logo.png">
-                        <figcaption><em>SiseCam</em></figcaption>
-                    </figure></a>
-                    <a href="https://www.rexiglass.com/" target="_blank">
-                    <figure class="left">
-                        <img src="ff/logo320659.webp">
-                        <figcaption><em>Rexi Glass</em></figcaption>
-                    </figure></a>
-                    <a href="https://www.incicam.com.tr/" target="_blank">
-                    <figure class="right">
-                        <img src="ff/inci cam.webp">
-                        <figcaption><em>Incicam</em></figcaption>
-                    </figure></a>
-                    </div>
+                <div class="partnor" id="partnor">  
+                        <!--Ardakan-->
+                        <div id="ardakanD">
+                            <a href="https://ardakanglass.com/" target="_blank" id="AA">
+                                <figure>
+                                    <img src="ff/logo ardakan.png">
+                                    <figcaption><em>Ardakan Glass</em></figcaption>
+                                </figure >
+                            </a>
+                        </div>
+                        <div id="AP">
+                            <p><a href="https://ardakanglass.com/" target="_blank"><bolder>ARDAKANGLASS.COM</bolder></a><br><br> კომპანია ,,არდაკან გლასს" დაარსდა 2011 წელს, ირანში, და დღესდღეობით, არის ერთ–ერთი ყველაზე მსხვილი მინის მწარმოებელი ქარხანა ცენტრალურ აზიაში. ის აწარმოებს, მრავალი სახეობის მინას რომელთაც გააჩნიათ ,,Float" ხარისხი. კომპანია აწარმოებს 1.9მმ–დან 19მმ–მდე სისქის მინებს.<br>
+                                <br>,,არდაკან გლასს" იაპონური სტანდარტით აწარმოებს როგორც სამშენებლო მინებს, ასევე სარკეებს.</p>
+                        </div>
+                        <!--AGC-->
+                        <div id="AGC">
+                            <a href="https://www.agc-yourglass.com/en-UK/profiler" target="_blank" id="AGCA">
+                                <figure>    
+                                    <img src="ff/header_logo.png">
+                                    <figcaption><em>AGC</em></figcaption>
+                                </figure >
+                            </a>
+                        </div>  
+                        <div id="AGCP">
+                            <p><a href="https://www.agc-yourglass.com" target="_blank">AGC-YOURGLASS.COM</a> <br><br>კომპანია ,,ეი–ჯი–სი" არის იაპონური წარმოშობის მქონე ბელგიური სამშენებლო მინის მწარმოებელი ქარხანა, რომელიც საუკუნეზე მეტია რაც ფუნქციონირებს. <br>
+                            <br> კომპანია ,,ეი–ჯი–სი" არის ერთ–ერთი მოწინავე ქარხანა მინის ინდუსტრიაში.</p>
+                        </div>
+                        <!--Azerfloat-->
+                        <div id="AZ">
+                            <a href="https://www.azerfloat.az/" target="_blank" id="AZA">
+                                <figure>
+                                    <img src="ff/logoSecond.svg">
+                                    <figcaption><em>AzerFloat</em></figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div id="AZP">
+                            <p><a href="https://www.azerfloat.az/" target="_blank">AZERFLOAT.AZ</a><br><br>
+                            კომპანია ,,აზერფლოატ" არის მინის მწარმოებელი აზერბაიჯანული ქარხანა, რომელიც 2021 წლიდან ახალი ძალით ჩაერთო მინის წარმოებაში და ძალიან მალე მოიპოვა მომხმარებლების ნდობა და შეიქმნა მაღალი რეპუტაცია. <br><br>
+                            ,,აზერფლოატ" აწარმოებს როგორც გამჭვირვალე(Float), ასევე ფერად(Tinted) მქონე მინებს.</p>
+                        </div>
+                        <!--SGG-->
+                        <div id="SGG">
+                            <a href="https://www.saint-gobain-glass.com/" target="_blank" id="SGA">
+                                <figure>
+                                    <img src="ff/sgg.png">
+                                    <figcaption><em>Saint-Gobain</em></figcaption>
+                                </figure class="left"> 
+                            </a>
+                        </div>
+                        <div id="SGP">
+                            <p><a href="https://in.saint-gobain-glass.com/" target="_blank">SAINT-GOBAIN.COM</a><br><br>
+                            კომპანია ,,სენტ–გობენი" დაარსდა საფრანგეთში, 1665 წელს. თავდაპირველად ის იყო სარკის მწარმოებელი კომპანია, თუმცა დროთა განმავლობაში მისი ასორტიმენტი გაიზარდა და გამრავალფეროვნდა. <br><br>
+                            ის არის ერთ–ერთი დომინანტი და საუკეთესო მინის მწარმოებელი ქარხანა მთელი მსოფლიოს მასშტაბით, რომელსაც ზურგს უმაგრებს მრავალწლიანი გამოცდილება.</p>
+                        </div>
+                        <!--GUARDIAN-->
+                        <div id="GG">
+                            <a href="https://www.guardianglass.com/tr/en" target="_blank" id="GA">
+                                <figure>
+                                    <img src="ff/av_imagen.png">
+                                    <figcaption><em>Guardian Glass</em></figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div id="GP">
+                            <p><a href="https://www.guardianglass.com/eu/en" target="_blank">GUARDIANGLASS.COM</a><br><br>
+                                ,,გარდიან გლასს" არის ერთ–ერთი მოწინავე და, რაც მთავარია, ყველაზე მეტად ინოვატორი კომპანია მინების ინდუსტრიაში. <br><br>
+                                ის დაარსდა 1932 წელს, აშშ–ში და, აქედან მოყოლებული დღემდე, მინით ამარაგებს 5 კონტინენტის მასშტაბით არსებულ 160–ზე მეტ ქვეყანას.</p>
+                        </div>
+                        <!--Salavat-->
+                        <div id="SS">
+                            <a href="http://www.salstek.ru/?locale=en" target="_blank" id="SA">
+                                <figure class="right">
+                                    <img src="ff/logo salavat (1).png">
+                                    <figcaption><em>SalavatSteklo</em></figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div id="SP">
+                            <p><a href="http://www.salstek.ru/" target="_blank">SALSTEK.RU</a><br><br>
+                            კომპანია ,,სალავატსტეკლო" არის მინის ერთერთი უმსხვილესი მწარმოებელი ქარხანა, რომელიც დაარსდა 1962 წელს. <br><br>
+                            ის არის როგორც გამჭვირვალე და ფერადი მინის, ასევე მაღალი ხარისხის მქონე სარკის მწარმოებელი კომპანია ჩრდილოეთ კავკასიაში.</p>
+                        </div>
+                        <!--Kaveh-->
+                        <div id="KA">
+                            <a href="https://kavehglass.com/?lang=en" target="_blank" id="KAA">
+                                <figure class="left">
+                                    <img src="ff/kaveh.png">
+                                    <figcaption><em>KavehGlass</em></figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div id="KP">
+                            <p>mmmmeeee</p>
+                        </div>
+                        <!--SISE-->
+                        <div id="SI">
+                            <a href="https://www.sisecam.com.tr/en" target="_blank" id="SIA">
+                                <figure class="right">
+                                    <img src="ff/Sisecam_yatay_logo.png">
+                                    <figcaption><em>SiseCam</em></figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div id="SIP">
+                            <p>SISecam</p>
+                        </div>
+                        <!--Rexi-->
+                        <div id="RE">
+                            <a href="https://www.rexiglass.com/" target="_blank" id="REA">
+                                <figure class="left">
+                                    <img src="ff/logo320659.webp">
+                                    <figcaption><em>Rexi Glass</em></figcaption>
+                                </figure>
+                            </a>
+                        </div> 
+                        <div id="REP">
+                            <p>REXI</p>
+                        </div> 
+                        <!--Inci-->
+                        <div id="IN">
+                            <a href="https://www.incicam.com.tr/" target="_blank" id="INA">
+                                <figure class="right">
+                                    <img src="ff/inci cam.webp">
+                                    <figcaption><em>Incicam</em></figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div id="INP">
+                            <p>INCICAM</p>
+                        </div>
+                </div>
             </section>
 
-            <h2>შესრულებული პროექტები</h2>
+            <h2 class="project">შესრულებული პროექტები</h2>
 
             <section class="third">
                 <figure id="a">
