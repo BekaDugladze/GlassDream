@@ -1,6 +1,5 @@
 // Gamotvla
-
-const nav = document.getElementsByClassName('nav');
+const nav = document.getElementById
 const gamotvla = document.getElementById('gamotvla');
 
 gamotvla.onclick = function() {
@@ -30,7 +29,8 @@ gamotvla.onclick = function() {
     let par = document.getElementById('pasuxi')
 
     if(kvadrati > 0 && mina !== '') {
-        return par.innerHTML = `მოცემული პროდუქტი არის ${kvadrati} კვადრატი. პროდუქტის ფასია ${Math.round(100 * fasi * kvadrati) / 100} დოლარი.`;
+        return par.innerHTML = `მოცემული პროდუქტი არის ${kvadrati} კვადრატი. 
+        პროდუქტის ფასია ${Math.round(100 * fasi * kvadrati) / 100} დოლარი.`;
         /*let paragraph = document.createElement("P");
       paragraph.innerHTML = "This is paragraph "+x;
       document.getElementById("SampleDIV").appendChild(paragraph);*/

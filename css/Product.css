@@ -1,0 +1,226 @@
+body{
+    background-color: rgba(66, 84, 182, 0.1);
+}
+
+.div{
+    display: flex;
+    height: 550px;
+    align-items: center;
+    align-content: center;
+}
+.sia{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 2%;
+}
+.sia label{
+    color: rgb(66, 84, 182);
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    margin: 3% auto;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.sia select{
+    width: 50%;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    padding: 1%;
+    border: 1px solid rgb(66, 84, 182);
+    color: rgb(66, 84, 182);
+    font-weight: bold;
+}
+.sia figure{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+.sia img{
+    margin-top: 2%;
+    width: 350px;
+    height: 350px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    border-radius: 70%;
+}
+
+/*მეორე მხარე*/
+
+.calke{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 1%;
+}
+.calke label{
+    color: rgb(66, 84, 182);
+    font-weight: bold;
+}
+
+.calke input{
+    width: fit-content;
+    padding: 2%;
+    margin: 2% auto;
+    border: 1px solid rgb(66, 84, 182);
+    color: rgb(66, 84, 182);
+}
+
+.calke button{
+    width: fit-content !important;
+    height: 50% !important;
+    padding: 2% !important;
+}
+
+#pasuxi{
+    color: rgb(66, 84, 182) !important;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/*meore Tema*/
+.detailed{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 100px auto;
+}
+.companies{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.array{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 120px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.array::-webkit-scrollbar-x{
+    display: none;
+}
+.array button{
+    border: 1px solid rgb(66, 84, 182);
+    border-radius: 75%;
+    background-color: transparent;
+    cursor: default;
+    margin: 7px;
+}
+.array img{
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    margin: 3px;
+}
+.array button:hover{
+    background-color: rgb(66, 84, 182);
+    transition: all 1s;
+}
+
+/*photos*/
+
+.photos{
+    margin: 40px auto 0 auto;
+    padding: 10px;
+    background-color: rgb(66, 84, 182);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+    overflow: hidden !important;
+}
+.photos button{
+    border: none;
+    background-color: transparent;
+    cursor: default;
+    margin: 7px;
+}
+.photos button:hover{
+    background-color: rgb(66, 84, 182);
+    transition: all 1s;
+}
+.photos img{
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    margin: 3px;
+    background-color: white;
+}
+.photos img:hover{
+    background-color: rgb(66, 84, 182);
+    opacity: 0.5;
+    transition: 0.8s;
+    transform: scale3d(1.05, 1.1, 1.1);
+}
+.p{
+    padding: 30px 20%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.p p{
+    padding: 0 40px 0 40px;
+    color: rgb(66, 84, 182);
+    font-weight: bold;
+    font-size: 17px;
+}
+
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('alexbrush-regular-webfont.woff2') format('woff2'),
+         url('alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.p h1 {
+    font-family: 'Alex Brush', cursive;
+    font-size: 50px;
+}
+/*agc*/
+#agcphoto{
+    position: absolute;
+    visibility: hidden;
+    transform: translate3d(-100%, 0, 0);
+}
+#agcp{
+    position: absolute;
+    visibility: hidden;
+    transform: translate3d(-100%, 0, 0);
+}
+
+/*sggPhoto*/
+#sggphoto{
+    position: absolute;
+    visibility: hidden;
+    transform: translate3d(-100%, 0, 0);
+}
+#sggp{
+    position: absolute;
+    visibility: hidden;
+    transform: translate3d(-100%, 0, 0);
+}

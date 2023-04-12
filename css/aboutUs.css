@@ -1,37 +1,72 @@
+body{
+    background-color: rgba(66, 84, 182, 0.15);
+}
+
 .AboutUs{
     margin: 0 auto;
     padding: 50px;
-    height: 900px;
+    height: 800px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-content: center;
-}
-.AboutUs video{
-    height:400px;
-    width: 100%;
+    text-align: center;
 }
 
-.Us{
-    height: 500px;
-}
-
-.Us h1{
+.AboutUs h1{
     text-align: center;
     font-size: 2em;
     color: rgb(66, 84, 182);
     margin: 5% auto;
 }
 
-.Us p{
+.AboutUs video{
+    display: block;
+    width: 700px;
+    height: 550px;
+}
+
+.Us{
+    height: 500px;
+    display: flex;
+    width: 100%;
+    margin-left: 50px;
+}
+.US article{
+    display: block;
+    align-self: flex-end;
+}
+.Us article p{
+    background-color: rgba(66, 84, 182, 0.1);
     align-items: center;
     text-align: center;
-    margin-left: 17.5%;
     align-content: center;
-    margin-right: 17.5%;
     font-size: 15px;
-    font-family: 'Noto Serif Georgian', serif;;
+    font-family: 'Noto Serif Georgian', serif;
+    margin-top: 0;
+    height: 490px;
+    width: 310px;
+    clear: right;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 30px;
 }
+.US a{
+    color: rgb(66, 84, 182);
+    width: 100%;
+}
+
+.Us a:hover{
+    color:white;
+    background-color: rgb(66, 84, 182);
+    transition: all 0.5s;
+}
+
+#h3{
+    margin-top: 10%;
+    height: 100px;
+    color:rgb(66, 84, 182);
+    font-family: 'Alex Brush', cursive;
+}
+
 .link{
     cursor: pointer;
     text-decoration: none;
