@@ -1,4 +1,8 @@
 # In process...
+---
+
+Working on this site is continuing!
+
 
 # GlassDream.ge
 ---
